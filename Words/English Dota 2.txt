@@ -1,0 +1,271 @@
+Axe	Топор	
+mist сoil	катушка туману	
+curse	прокляття	
+abandoned	кинуті	
+borrowed time	запозичений час	
+acid	кислота	
+asid spray	кислотний спрей	
+unstable concoction	нестабільна суміш	
+greed	жадібність	
+culling blade	відбирання леза	
+brewmaster	пивовар	
+Drunker brawler	пяний забіяка	
+primal split	первиний розкол	
+bristle	щетина, наїжитися	
+viscous nasal goo	в'зкий носовий слиз	
+quill	голка дикобраза	
+warpath	тропа войни	
+Centaur Warrunner	Кентавр-воїн	
+hoof stomp	топати(2) копитом	
+reality rift	реальний розкол	
+chaos knight	рицар хаоса(1)	
+phantasm	ілюзия, призрак	
+power cogs	силові гвинтики	
+flare	спалах, ракета	
+hookshot	гачок	
+doom	прирікати, гибель	
+devour	пожирати	
+scorched earth	випалена земля	
+infernal	адский, проклятий	
+breathe fire	дихати вогнем	
+boulder	валун	
+grip	захват	
+Earthshaker	землекрушитель	
+fissure	трішина, розколюватися	
+echo slam	відлуння	
+aftershock	толкчок після землетрусу	
+natural order	природный порядок	
+inner fire	внутрішній вогонь	
+burning spear	горящее копье	
+tether	привязувати, границя	
+overcharge	завищення	
+relocate	перемістити	
+torent	поток, ливень	
+tide	приплив	
+spot	місце	
+overwhelming odds	огомние шанси	
+moment of courage	момент смелости	
+rage	ярость	
+feast	пир, праздник	
+wounds	рани	
+infest	зараження	
+howl	вой	
+shock wave	ударна волна	
+empower	дозволяти	
+skewer	шпага, проколювати, шампур	
+reverse polarity	зворотня полярність	
+void	пустота, недійсний	
+Purification	очищення	
+heavenly grace	небесна благодать	
+sunray	сонячний промінь	
+Pudge	Толстяк	
+hook	крюк, гачок	
+rot	гниття, гниль	
+flesh heap	купа мяса	
+dismember	розчленування	
+burrow	нора	
+caustic	їдкий	
+crush	розчавити, давити	
+bash	удар, сильно бити	
+haze	туман	
+charge	заряд	
+warcry	боевий клич	
+Tide	прилив, волна, поток, море	
+gush	поток, ливень	torent
+ravage	спустошення, знищення	torent
+timber chain	лесная цепь	torent
+Tiny	крихітний	torent
+avalanche	лавина, обвал	torent
+toss	кидати, закидати	torent
+leech seed	насіння п'явки	
+overgrowth	заростання, чрезмерно бистрий рост	
+Tusk	бивень, ікло	
+ice shards	осколки льда	
+walrus punch	удар моржа(1)	
+undying	безсмертний	
+immortal	ьезсмертний	
+decay	гниття, распад	
+soul rip	розрив души	
+tombstone	надгробний камінь	
+wraith fire blast	взрив призрачного огня	
+mortal strike	смертельний удар	
+blink	блимати, кліпати	
+gust	порив вітру, шквал	
+recision	точность, меткость	
+sacred arrow	священная стрела	
+leap	прижок, скачок	
+morph	превращаться	
+lance	копье	
+doppelganger	двійник	
+vengeful spirit	мстительний дух	
+magical missile	магічна ракета	
+assassinate	убивать	
+lucent beam	луч света	
+blessing	благословение	
+eclipse	затемнення	
+bounty	щедрость, подарок, премия	
+track	след, путь	
+enrage	бесить, розгнівайтеся	
+rocket barrage	ракетний обстрел	
+homing missile	ракета самонаведения	
+call down	навлекать, делать виговор	
+savage roar	дикий рев	
+troll warlord	троль воєначальник троль	
+whirling axes	вращающиеся топори	
+fervor	запал, пил, горячность	
+ember	тлеющие(угасаючі) угли	
+searing chains	обжигающие цепи	
+fire remnant	остатки огня	
+thirst	жажда	
+rupture	розрив	
+shadow fiend	тіньовий демон	
+razor	бритва	
+field	поле	
+current	ток	
+venomous gale	ядовита бюря	
+plague	чума	
+time dilation	замедлиние времени	
+time lock	таймер, блокування часу	
+Phantom assasin	призрачний убийца	
+stifling dagger	удушаючий кинжал	
+Viper	змія, гадюка	
+strafe	розносить, наказание, ураганий огонь	
+searing arrows	жгучие стрели	
+broodmother	мати виводка	
+insatiable hunger	ненаситний голод	
+Weaver	ткач	
+the swam	рой	
+geminate	удвоювати	
+time lapse	промежуток часу	
+desolate	заброшений, спустошений	
+haunt	преследувать	
+ransack	грабувати	
+impale	проколювати, нанизувати	
+darkpact	темний договор	
+pounce	накидатися, внезапно атакувати	
+essence shift	сдвиг сущности	
+split shot	роздільний вистріл	
+stone gaze	камяний взгляд	
+Terror blade	лезвия ужаса	
+reflection	отражения	
+conjure image	заклинати образ	
+sunder	розлучати, розділяти	
+Ark	дуга	
+flux	поток	
+spark wraith	искра призрака	
+tempest double	двойная буря	
+frostbite	обморожение	
+Puck	шайба, дух-проказник	
+dream coil	катушка(кольцо) мечти	
+static remnant	статичний остаток (след)	
+electric vortex	електричний вихрь (водовород)	
+overload	перезагрузка	
+arc lightning	дугова молнія	
+lightning boalt	удар молнії	
+dragon slave	раб-дракон	
+shackles	каднали, узи, наручники	
+Tinker	медник, сапожник, плохой роботник	
+heat-seeking missle	теплова ракета	
+ream	переворужать	
+Nature`s prophet	пророк природи	
+sprout	росток, проростати	
+enchantress	волшебница, чарівниця	
+ice path	ледяная дорожка	
+penitence	покаяння	
+holy persuasion	святе переконання	
+divine favor	божествиная милость	
+silencer	глушитель	
+arcane curse	таємне прокляття	
+glaives of wisdom	сияние мудрости	
+ignite	воспламенять, зажигать	
+blood lust	жажда крови,кровожадность	
+fade bolt	затухаючий болт	
+arcane supremacy	таємне верховенство	
+disruptor	разрушитель	
+glimpse	проблеск, мелькание	
+keeper of the light	хранитель света	
+illuminate	освещать	
+iblinding light	ослепительний свет	
+ancient seal	древняя печать	
+purifying flames	очищающее пламя	
+false promise	ложное обещание	
+blast off	взлетать	
+dark willow	темна верба	
+bramble maze	ожиновий лабіринт	
+shadow realm	царство тіней	
+cursed crown	проклята корона	
+bane	отрава, загибель, яд	
+nightmare	кошмар	
+fiend`s grip	хватка демона	
+sinister gaze	зловещей взгляд	
+hex	наговор	
+witch doctor	знахарь, шаман	
+paralyzing cask	парализующая бочка	
+malediction	прокляття	
+Enigma	загадка	
+demonic conversion	демоническое обращение	
+reaper's scythe	коса жнеця	
+bonds	узи	
+upheaval	переворот	
+sonic wave	звукова волна	
+death prophet	пророк смерті	
+swam	рій	
+dazzle	сліпити	
+grave	могила	
+juju	амулет, чари, табу	
+diabolic edict	дьявольский указ	
+dark seer	темний провидець	
+surge	сплеск	
+sticky napalm	липкиц напалм	
+firefly	світлячок	
+ancient apparition	древнє втілення	
+ice vortex	холодний вихор	
+invoker	визиваючий	
+outworld devourer	потустороний пожиратель	
+arcane orb	таємний шар	
+astral imprisonment	астральне заключення	
+demonic purge	демонична чистка	
+visage	лицо	
+grave chill	могильний холод	
+cold embrace	холодні обійми	
+Grim	похмурий, мрачний	
+carry	нести, везти	
+clarity	ясность	
+smoke of deceit	дим обману	
+healing salve	цілюща мазь	
+javaline	дротик, метальне копьє	
+cloak	плащ, мантия	
+infused raindrop	настояна крапля доща	
+chainmail	кольчуга	
+morbid mask	болезная маска	
+evasion	уклонения	
+vitality booster	усилитель живучості	
+reaver	грабитель, розбійник	
+magic wand	волшебная палочка (жезл)	
+perseverance	наполегливість, завзятя, упорство	
+bracer	нарукавник	
+oblivion staff	посох забуття	
+tranquil boots	спокійні чоботи	
+holy locket	святий медальон	
+pipe of insight	труба розуміння	
+headdress	головний убір, зачіска	
+medallion of courage	медальйон мужності	
+drum	барабан	
+spirit vessel	духовний сосуд	
+glimmer cape	мерехливий накид	
+divinity	божество	
+veil of discord	завіса розбрату	
+solar crest	сонячний гребінь	
+orchid malevolence	злорадство (злоба) орхідеї	
+nullifier	обнулятор, зведений нанівець	
+hood of defiance	капюшон протидії	
+hurricane pike	ураганое копье	
+crimson guard	малиновий страж	
+skull basher	удар по черепу(1)	
+battle fury	боевая ярость	
+radiance	сияние, блеск	
+armlet	нарукавник, браслет	
+abyssal blade	лезо безодні	
+mask of madness	маска божевілля	
+desolator	опустошитель	
+maelstrom	вир, вихрь	
