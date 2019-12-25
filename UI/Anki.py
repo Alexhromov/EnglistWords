@@ -20,6 +20,10 @@ class Ui_Form(object):
         self.textEdit.setObjectName("textEdit")
 
         self.textEdit.setReadOnly(True)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(230, 380, 55, 16))
+        self.label.setObjectName("label")
+
 
         self.textBrowser = QtWidgets.QTextBrowser(Form)
         self.textBrowser.setGeometry(QtCore.QRect(120, 150, 261, 121))
