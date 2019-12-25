@@ -1,8 +1,8 @@
 import random
-base = {}
 
 
 class Colors:
+
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKGREEN = '\033[92m'
@@ -13,51 +13,57 @@ class Colors:
     UNDERLINE = '\033[4m'
 
 
-def write_to_base(name):
+class Constructor():
 
-    with open("Words\\" + name + ".txt", encoding="utf-8") as w:
-        for line in w:
-            text = line.rstrip("\n").rstrip().split("\t")
-            base[text[0]] = text[1]
+    def __init__(self, name):
+        self.write_to_base(name)
+        self.base = {}
 
+    def write_to_base(self, name):
 
-def Anki():
-    while base:
-        key = random.choice(list(base.keys()))
-        print(key, end="  ->   ")
-        if str(input()) != "":
-            break
-        print('\t'*3, base[key])
-        print(Colors.FAIL + "smth\t" + Colors.OKBLUE + "nothing" + Colors.ENDC)
+        with open("Words\\" + name + ".txt", encoding="utf-8") as w:
+            for line in w:
+                text = line.rstrip("\n").rstrip().split("\t")
+                self.base[text[0]] = text[1]
 
-        if str(input()) == "":
-            base.pop(key)
+    def Anki(self):
 
+        while self.base:
+            key = random.choice(list(self.base.keys()))
+            print(key, end="  ->   ")
+            if str(input()) != "":
+                break
+            print('\t'*3, self.base[key])
+            print(Colors.FAIL + "smth\t" + Colors.OKBLUE + "nothing" + Colors.ENDC)
 
-def write_test():
-    while base:
-        key = random.choice(list(base.keys()))
-        print(base[key], end="  ->   ")
+            if str(input()) == "":
+                self.base.pop(key)
 
-        answer = str(input()).lower()
+    def write_test(self):
+        while self.base:
+            key = random.choice(list(self.base.keys()))
+            print(self.base[key], end="  ->   ")
 
-        flag = True
+            answer = str(input()).lower()
 
-        for i in range(len(key)-abs(len(key)-len(answer))):
+            flag = True
 
-            if key.lower()[i] != answer[i]:
-                flag = False
-                print(Colors.FAIL + answer[i] + Colors.ENDC, end="")
-            else:
-                print(Colors.OKBLUE + answer[i] + Colors.ENDC, end="")
-        print(" -> " + Colors.OKBLUE + key.lower() + Colors.ENDC)
-        if flag:
-            base.pop(key)
+            for i in range(len(key)-abs(len(key)-len(answer))):
+
+                if key.lower()[i] != answer[i]:
+                    flag = False
+                    print(Colors.FAIL + answer[i] + Colors.ENDC, end="")
+                else:
+                    print(Colors.OKBLUE + answer[i] + Colors.ENDC, end="")
+            print(" -> " + Colors.OKBLUE + key.lower() + Colors.ENDC)
+            if flag:
+                self.base.pop(key)
 
 
 if __name__ == "__main__":
-    write_to_base("Book - Henry Ford")
+    new = Constructor("Book - Henry Ford")
     #Anki()
     print("|"*80)
-    write_test()
+
+
 
