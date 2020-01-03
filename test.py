@@ -4,7 +4,6 @@ import sys
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 
-import UI.Anki as Anki
 import UI.AnkiSetup as AnkiS
 import UI.menuV2 as menu  # импорт нашего сгенерированного файла
 import UI.text2 as text2
@@ -29,7 +28,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # подключение кнопок
         self.ui.pushButton_6.clicked.connect(lambda: self.setup())
-        self.ui.pushButton_2.clicked.connect(lambda: self.ankiInterfase())
+
         self.ui.pushButton_4.clicked.connect(lambda: self.writeWords())
 
     def setup(self):
@@ -37,7 +36,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.windowsetup = QtWidgets.QMainWindow()
         self.uisetup = AnkiS.Ui_Form()
         self.uisetup.setupUi(self.windowsetup)
-        self.windowsetup.setWindowTitle("Setup")
+
         self.uisetup.pushButton.clicked.connect(lambda: self.getinfoas())
         self.uisetup.pushButton.setShortcut("Ctrl+Return")
         self.windowsetup.show()
@@ -47,76 +46,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.write_to_base("English Dota 2", self.wordcount)
         self.ui.label_3.setText(str(self.wordcount))
         self.windowsetup.close()
-
-    def ankiInterfase(self):
-
-        self.window = QtWidgets.QMainWindow()
-        self.uia = Anki.Ui_Form()
-        self.uia.setupUi(self.window)
-        self.window.setWindowTitle("Anki")
-
-        self.uia.pushButton.setShortcut("Enter")
-        self.uia.pushButton_2.setShortcut("1")
-        self.uia.pushButton_3.setShortcut("2")
-
-        key = random.choice(list(self.base.keys()))
-        self.key = key
-        self.uia.pushButton_2.hide()
-        self.uia.pushButton_3.hide()
-        self.uia.textBrowser.hide()
-
-        self.uia.label.setText(str(self.wordcount))
-        self.uia.textEdit.setText(key)
-        self.uia.textEdit.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-
-        self.uia.textBrowser.setText(self.base[key])
-        self.uia.textBrowser.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-        self.uia.pushButton.clicked.connect(self.showall)
-        self.uia.pushButton_2.clicked.connect(lambda: self.popAnkiCard())
-        self.uia.pushButton_2.clicked.connect(lambda: self.nextcard())
-        self.uia.pushButton_3.clicked.connect(lambda: self.nextcard())
-
-        self.window.show()
-
-    def popAnkiCard(self):
-        if len(self.base) == 0:
-            pass
-        else:
-            self.base.pop(self.key)
-            self.wordcount -= 1
-            self.uia.label.setText(str(self.wordcount))
-
-    def nextcard(self):
-
-        if self.wordcount == 0:
-            self.uia.pushButton_2.setEnabled(False)
-            self.uia.textBrowser.setStyleSheet("background-color: rgb(20, 160, 0)")
-            self.uia.textBrowser.setText("All words are complete")
-            self.uia.pushButton.setText("OK")
-            self.ui.label_3.setText(str(self.wordcount))
-            self.uia.pushButton.clicked.connect(lambda: self.window.close())
-            self.uia.textEdit.hide()
-            self.uia.pushButton_2.hide()
-            self.uia.pushButton_3.hide()
-
-        else:
-
-            key = random.choice(list(self.base.keys()))
-            self.key = key
-            self.uia.pushButton_2.hide()
-            self.uia.pushButton_3.hide()
-            self.uia.textBrowser.hide()
-
-            self.uia.textEdit.setText(key)
-            self.uia.textEdit.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-            self.uia.textBrowser.setText(self.base[key])
-            self.uia.textBrowser.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-
-    def showall(self):
-
-        self.uia.pushButton_2.show()
-        self.uia.pushButton_3.show()
-        self.uia.textBrowser.show()
 
     def write_to_base(self, name, numb=3):
 
@@ -143,7 +72,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.window2 = QtWidgets.QMainWindow()
         self.ui2 = text2.Ui_Form()
         self.ui2.setupUi(self.window2)
-        self.window2.setWindowTitle("Text test")
 
         key = random.choice(list(self.base.keys()))
         self.key = key
@@ -173,7 +101,6 @@ class MainWindow(QtWidgets.QMainWindow):
             self.ui2.lineEdit.setText("All words are complete")
             self.ui2.pushButton.setText("OK")
             self.ui2.pushButton.clicked.connect(lambda: self.window2.close())
-            self.ui2.label.setText(str(self.wordcount))
 
         else:
             key = random.choice(list(self.base.keys()))
@@ -205,10 +132,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui2.pushButton_1.show()
         self.ui2.pushButton.setEnabled(False)
         self.ui2.pushButton.close()
-
-
-
-
 
 
 app = QtWidgets.QApplication([])

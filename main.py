@@ -16,8 +16,8 @@ class Colors:
 class Constructor():
 
     def __init__(self, name):
-        self.write_to_base(name)
         self.base = {}
+        self.write_to_base(name)
 
     def write_to_base(self, name):
 
@@ -62,7 +62,8 @@ class Constructor():
 
 if __name__ == "__main__":
     new = Constructor("Book - Henry Ford")
-    #Anki()
+    # new.Anki()
+    new.write_test()
     print("|"*80)
 
 
