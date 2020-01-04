@@ -1,5 +1,5 @@
 Axe	Топор	
-mist сoil	катушка туману	
+mist coil	катушка туману
 curse	прокляття	
 abandoned	кинуті	
 borrowed time	запозичений час	
