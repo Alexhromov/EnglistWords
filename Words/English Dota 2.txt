@@ -14,9 +14,9 @@ primal split	первиний розкол
 bristle	щетина, наїжитися	
 viscous nasal goo	в'зкий носовий слиз	
 quill	голка дикобраза	
-warpath	тропа войни	
-Centaur Warrunner	Кентавр-воїн	
-hoof stomp	топати(2) копитом	
+warpath	тропа войни
+Centaur Warrunner	Кентавр-воїн
+hoof stomp	топати(2) копитом
 reality rift	реальний розкол	
 chaos knight	рицар хаоса(1)	
 phantasm	ілюзия, призрак	
@@ -264,8 +264,8 @@ crimson guard	малиновий страж
 skull basher	удар по черепу(1)	
 battle fury	боевая ярость	
 radiance	сияние, блеск	
-armlet	нарукавник, браслет	
+armlet	нарукавник, браслет
 abyssal blade	лезо безодні	
-mask of madness	маска божевілля	
-desolator	опустошитель	
-maelstrom	вир, вихрь	
+mask of madness	маска божевілля
+desolator	опустошитель
+maelstrom	вир, вихрь
