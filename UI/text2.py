@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Text test")
-        Form.resize(487, 400)
+        Form.resize(500, 400)
         self.lineEdit = QtWidgets.QLineEdit(Form)
         self.lineEdit.setGeometry(QtCore.QRect(110, 30, 291, 101))
         self.lineEdit.setFrame(False)

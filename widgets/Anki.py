@@ -15,6 +15,7 @@ class RepeatWords(QtWidgets.QWidget):
     def __init__(self):
 
         super().__init__()
+        self.setMinimumSize(500, 400)
 
         self.base = Config.base
         self.wordcount = Config.wordcount
@@ -57,12 +58,12 @@ class RepeatWords(QtWidgets.QWidget):
             self.uia.label.setText(str(self.wordcount))
 
     def nextcard(self):
-
         if self.wordcount == 0:
             self.uia.pushButton_2.setEnabled(False)
             self.uia.textBrowser.setStyleSheet("background-color: rgb(20, 160, 0)")
             self.uia.textBrowser.setText("All words are complete")
             self.uia.pushButton.setText("OK")
+            self.uia.pushButton.setShortcut("Enter")
             self.uia.pushButton.clicked.connect(lambda: self.window.close())
             self.uia.textEdit.hide()
             self.uia.pushButton_2.hide()
@@ -91,6 +92,7 @@ class RepeatWords(QtWidgets.QWidget):
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     application = RepeatWords()
+
     application.show()
 
     sys.exit(app.exec())

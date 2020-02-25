@@ -14,17 +14,14 @@ class Ui_Form(object):
 
     def setupUi(self, Form):
         Form.setObjectName("Anki")
-        Form.resize(492, 401)
+        Form.resize(500, 400)
         self.textEdit = QtWidgets.QTextEdit(Form)
         self.textEdit.setGeometry(QtCore.QRect(90, 20, 311, 91))
         self.textEdit.setObjectName("textEdit")
-
         self.textEdit.setReadOnly(True)
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(230, 380, 55, 16))
         self.label.setObjectName("label")
-
-
         self.textBrowser = QtWidgets.QTextBrowser(Form)
         self.textBrowser.setGeometry(QtCore.QRect(120, 150, 261, 121))
         self.textBrowser.setTabletTracking(False)

@@ -14,7 +14,7 @@ class Main(QtWidgets.QWidget):
     def __init__(self):
 
         super().__init__()
-
+        self.setMinimumSize(500, 400)
         self.base = Config.base
         self.wordcount = Config.wordcount
 
@@ -30,28 +30,28 @@ class Main(QtWidgets.QWidget):
         self.ui2.lineEdit.setText(self.base[key])
 
         self.ui2.pushButton.setShortcut("Return")
-        self.ui2.pushButton_1.setShortcut("Return")
-        self.ui2.pushButton_1.setEnabled(False)
-        self.ui2.pushButton_1.close()
-        self.ui2.pushButton.clicked.connect(lambda: self.b2checkWord())
-        self.ui2.pushButton_1.clicked.connect(lambda: self.b2nextCard())
+        self.ui2.pushButton.flag = True
+        self.ui2.pushButton.clicked.connect(lambda: self.bttn_action())
 
         self.window2.show()
+
+    def bttn_action(self):
+        if self.ui2.pushButton.flag:
+            self.ui2.pushButton.flag = False
+            self.b2checkWord()
+        else:
+            self.ui2.pushButton.flag = True
+            self.b2nextCard()
 
     def b2nextCard(self):
         self.ui2.lineEdit_2.clear()
         self.ui2.lineEdit_2.setStyleSheet("color: black")
 
-        self.ui2.pushButton.setEnabled(True)
-        self.ui2.pushButton.show()
-        self.ui2.pushButton_1.setEnabled(False)
-        self.ui2.pushButton_1.close()
-
         if self.wordcount == 0:
             self.ui2.lineEdit.setText("All words are complete")
             self.ui2.pushButton.setText("OK")
-            # self.window2.close()
-            self.ui2.pushButton.clicked.connect(lambda: self.window2.close())
+            self.ui2.pushButton.clicked.connect(self.window2.close)
+            self.ui2.pushButton.setShortcut("Return")
             self.ui2.label.setText(str(self.wordcount))
 
         else:
@@ -79,11 +79,6 @@ class Main(QtWidgets.QWidget):
             self.ui2.label.setText(str(self.wordcount))
         else:
             self.ui2.lineEdit_2.setStyleSheet("color: rgb(255, 1, 1)")
-
-        self.ui2.pushButton_1.setEnabled(True)
-        self.ui2.pushButton_1.show()
-        self.ui2.pushButton.setEnabled(False)
-        self.ui2.pushButton.close()
 
 
 if __name__ == "__main__":
