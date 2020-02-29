@@ -34,14 +34,14 @@ class RepeatWords(QtWidgets.QWidget):
 
         self.uia.pushButton_2.hide()
         self.uia.pushButton_3.hide()
-        self.uia.textBrowser.hide()
+        self.uia.textBrowser_2.hide()
 
         self.uia.label.setText(str(self.wordcount))
-        self.uia.textEdit.setText(key)
-        self.uia.textEdit.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-
-        self.uia.textBrowser.setText(self.base[key])
+        self.uia.textBrowser.setText(key)
         self.uia.textBrowser.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
+
+        self.uia.textBrowser_2.setText(self.base[key])
+        self.uia.textBrowser_2.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
         self.uia.pushButton.clicked.connect(self.showall)
         self.uia.pushButton_2.clicked.connect(lambda: self.popAnkiCard())
         self.uia.pushButton_2.clicked.connect(lambda: self.nextcard())
@@ -60,12 +60,12 @@ class RepeatWords(QtWidgets.QWidget):
     def nextcard(self):
         if self.wordcount == 0:
             self.uia.pushButton_2.setEnabled(False)
-            self.uia.textBrowser.setStyleSheet("background-color: rgb(20, 160, 0)")
-            self.uia.textBrowser.setText("All words are complete")
+            self.uia.textBrowser_2.setStyleSheet("background-color: rgb(20, 160, 0)")
+            self.uia.textBrowser_2.setText("All words are complete")
             self.uia.pushButton.setText("OK")
             self.uia.pushButton.setShortcut("Enter")
             self.uia.pushButton.clicked.connect(lambda: self.window.close())
-            self.uia.textEdit.hide()
+            self.uia.textBrowser.hide()
             self.uia.pushButton_2.hide()
             self.uia.pushButton_3.hide()
 
@@ -75,24 +75,21 @@ class RepeatWords(QtWidgets.QWidget):
             self.key = key
             self.uia.pushButton_2.hide()
             self.uia.pushButton_3.hide()
-            self.uia.textBrowser.hide()
+            self.uia.textBrowser_2.hide()
 
-            self.uia.textEdit.setText(key)
-            self.uia.textEdit.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
-            self.uia.textBrowser.setText(self.base[key])
+            self.uia.textBrowser.setText(key)
             self.uia.textBrowser.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
+            self.uia.textBrowser_2.setText(self.base[key])
+            self.uia.textBrowser_2.setFont(QtGui.QFont("Times", 16, QtGui.QFont.Bold))
 
     def showall(self):
 
         self.uia.pushButton_2.show()
         self.uia.pushButton_3.show()
-        self.uia.textBrowser.show()
+        self.uia.textBrowser_2.show()
 
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     application = RepeatWords()
-
-    application.show()
-
     sys.exit(app.exec())

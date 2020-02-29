@@ -131,6 +131,5 @@ class Main(QtWidgets.QWidget):
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     application = Main()
-    application.show()
 
     sys.exit(app.exec())

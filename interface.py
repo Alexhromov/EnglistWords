@@ -12,8 +12,8 @@ from widgets import Anki, writing_words, check_letters
 
 
 # Todo: After widgets close renew counter at main window
+# Todo: Check if are words  in base when bttns-widgets press
 # Todo: Auto window size
-# Todo: Open file: do flag check file; do function for download into base
 # Todo: Base for save words
 
 
